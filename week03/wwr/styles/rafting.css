@@ -1,0 +1,97 @@
+/* Define Color Variables */
+:root {
+    --primary-color: #555B6E;
+    --secondary-color: #89B0AE;
+    --accent1-color: #BEE3DB;
+    --accent2-color: #FAF9F9;
+}
+
+/* General Styles */
+body {
+    font-family: 'Oswald', 'Roboto', sans-serif;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary-color);
+}
+
+.nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Article Styling */
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    margin-left: 10px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Social Media Links */
+.sociallinks a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: auto;
+}
