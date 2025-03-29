@@ -15,7 +15,7 @@ body {
     background-color: var(--accent2-color);
     margin: 0;
     padding: 0;
-    max-width: 1200px;
+    
 }
 
 /* Header */
@@ -23,6 +23,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    text-align: center;
     background-color: var(--secondary-color);
     padding: 15px;
 }
@@ -44,11 +45,18 @@ body {
     position: relative;
     text-align: center;
 }
+.hero article {
+    width: 90%; 
+    left: 5%; 
+    bottom: 5%
+}
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 600px;
+    object-fit: cover;
 }
 
 .hero h1 {
@@ -68,7 +76,7 @@ body {
     position: absolute;
     bottom: 10%;
     left: 10%;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 10px;
     width: 400px;
@@ -78,9 +86,10 @@ body {
     float: right;
     width: 80px;
     margin-left: 10px;
+    object-fit: cover;
 }
 
-/* History Section layout */
+/* History Section  */
 .history {
     text-align: center;
     padding: 20px;
@@ -92,6 +101,9 @@ body {
     align-items: center;
 }
 /* Adventure Section Layout*/
+.adventure h2 {
+    text-align: center;
+}
 .adventure-gallery {
    display: flex;
    justify-content: space-between;
@@ -101,6 +113,7 @@ body {
 figure {
     text-align: center;
     margin: 10px;
+    width: 80%;
 }
 
 figcaption {
@@ -110,6 +123,8 @@ figcaption {
     margin-top: 5px;
 }
 h2 {
+    display: flex;
+    align-items: center;
     color: var(--primary-color);
 }
 
