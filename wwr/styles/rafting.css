@@ -1,9 +1,9 @@
 /* Define Color Variables */
 :root {
-    --primary-color: #555B6E;
-    --secondary-color: #89B0AE;
+    --primary-color: #404655;
+    --secondary-color:#89B0AE;
     --accent1-color: #BEE3DB;
-    --accent2-color: #FAF9F9;
+    --accent2-color:#F5F5F5;
     --font-primary: 'Oswald', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 }
@@ -35,7 +35,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: var(--accent2-color);
+    color: #E0E0E0;
     font-weight: bold;
 }
 
@@ -48,9 +48,9 @@ body {
 .hero img {
     display: block;
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-height: 600px; /* Limit hero image height */
-    object-fit: cover; /* Prevent image distortion */
+    height: auto; 
+    max-height: 600px; 
+    object-fit: cover; 
 }
 
 .hero h1 {
@@ -79,7 +79,7 @@ body {
     float: right;
     width: 80px;
     margin-left: 10px;
-    object-fit: cover; /* Prevent image distortion */
+    object-fit: cover;
 }
 
 /* History Section  */
@@ -110,13 +110,12 @@ body {
 figure {
     text-align: center;
     margin: 10px;
-    flex: 1 1 200px; /* Allow figures to grow/shrink, set base width */
+    flex: 1 1 200px;
 }
-
 figure img {
-    width: 100%; /* Make images responsive within figure */
+    width: 100%; 
     height: auto;
-    object-fit: cover; /* Prevent image distortion */
+    object-fit: cover;
 }
 
 figcaption {
@@ -138,7 +137,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    color: var(--accent2-color);
+    color: #E0E0E0;
     padding: 10px;
 }
 
@@ -156,39 +155,39 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
-        grid-template-columns: 1fr; /* Stack logo and nav */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 
     .nav {
-        justify-content: center; /* Center nav on smaller screens */
+        justify-content: center; 
     }
 
     .hero article {
-        width: 90%; /* Make article box wider on small screens */
-        left: 5%; /* Center article box */
+        width: 90%; 
+        left: 5%; 
         bottom: 5%;
     }
 
     .history-content {
-        grid-template-columns: 1fr; /* Stack history content on small screens */
+        grid-template-columns: 1fr;
     }
 
     .adventure-gallery {
-        flex-direction: column; /* Stack adventure images on small screens */
+        flex-direction: column;
         align-items: center;
     }
 
     figure {
-        width: 80%; /* Adjust figure width for small screens */
+        width: 80%; 
     }
 
     footer {
         flex-direction: column; 
         text-align: center;
     }
-    .history h2, /* Center History heading */
-    .adventure h3 { /* Center Adventure heading */
+    .history h2, 
+    .adventure h3 { 
         text-align: center;
     }
 }
