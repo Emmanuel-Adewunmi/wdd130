@@ -1,7 +1,7 @@
 /* Define Color Variables */
 :root {
     --primary-color: #404655;
-    --secondary-color:#89B0AE;
+    --secondary-color:#f37703;
     --accent1-color: #BEE3DB;
     --accent2-color:#F5F5F5;
     --font-primary: 'Oswald', sans-serif;
@@ -35,7 +35,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #E0E0E0;
+    color: #141111;
     font-weight: bold;
 }
 
@@ -137,7 +137,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    color: #E0E0E0;
+    color: #141111;
     padding: 10px;
 }
 
