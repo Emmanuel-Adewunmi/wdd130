@@ -81,6 +81,11 @@ body {
     border-radius: 10px;
     width: 400px;
 }
+.hero article h3 { 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+    color: var(--primary-color); 
+}
 
 .hero article img {
     float: right;
