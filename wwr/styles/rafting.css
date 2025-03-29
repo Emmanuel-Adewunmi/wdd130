@@ -184,7 +184,11 @@ footer {
     }
 
     footer {
-        flex-direction: column; /* Stack footer content */
+        flex-direction: column; 
+        text-align: center;
+    }
+    .history h2, /* Center History heading */
+    .adventure h3 { /* Center Adventure heading */
         text-align: center;
     }
 }
