@@ -89,10 +89,20 @@
 
                     <div class="radio-group">
                         <p>Purpose of The Message:</p>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="purpose-website">
+                            <input type="radio" id="purpose-website" name="purpose" value="website">
+                            Website Suggestion
+                        </label>
                     </div>
+        
 
 
                     <div class="form-group">
@@ -102,7 +112,10 @@
 
 
                     <div class="checkbox-group">
-                        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
                     </div>
 
 
