@@ -1,13 +1,12 @@
 /* Define Color Variables */
 :root {
     --primary-color: #404655;
-    --secondary-color:#f37703;
+    --secondary-color: #f37703;
     --accent1-color: #BEE3DB;
-    --accent2-color:#F5F5F5;
+    --accent2-color: #F5F5F5;
     --font-primary: 'Oswald', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 }
-
 
 /* General Styles */
 body {
@@ -18,7 +17,6 @@ body {
     padding: 0;
 }
 
-
 /* Header */
 .header {
     display: grid;
@@ -28,14 +26,12 @@ body {
     padding: 15px;
 }
 
-
-/* Navigation Using flex*/
+/* Navigation Using flex */
 .nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
-
 
 .nav a {
     text-decoration: none;
@@ -43,13 +39,11 @@ body {
     font-weight: bold;
 }
 
-
 /* Hero Section */
 .hero {
     position: relative;
     text-align: center;
 }
-
 
 .hero img {
     display: block;
@@ -58,7 +52,6 @@ body {
     max-height: 600px;
     object-fit: cover;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -71,8 +64,6 @@ body {
     padding: 10px 20px;
 }
 
-
-/* Article Styling */
 .hero article {
     position: absolute;
     bottom: 10%;
@@ -83,7 +74,6 @@ body {
     width: 400px;
 }
 
-
 .hero article img {
     float: right;
     width: 80px;
@@ -91,13 +81,11 @@ body {
     object-fit: cover;
 }
 
-
-/* History Section  */
+/* History Section */
 .history {
     text-align: center;
     padding: 20px;
 }
-
 
 .history-content {
     display: grid;
@@ -106,12 +94,10 @@ body {
     align-items: center;
 }
 
-
-/* Adventure Section Layout*/
+/* Adventure Section Layout */
 .adventure h2 {
     text-align: center;
 }
-
 
 .adventure-gallery {
     display: flex;
@@ -120,18 +106,17 @@ body {
     padding: 20px;
 }
 
-
 figure {
     text-align: center;
     margin: 10px;
     flex: 1 1 200px;
 }
+
 figure img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 
 figcaption {
     font-family: var(--font-secondary);
@@ -140,23 +125,121 @@ figcaption {
     margin-top: 5px;
 }
 
-
 h2 {
     display: flex;
     align-items: center;
     color: var(--primary-color);
 }
 
+/*Home Page Specific Styles*/
 
-/* Contact Section Styles */
+.home-hero {
+    background: url('images/home-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent2-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+}
 
+.home-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
 
-/* Section Container */
+.home-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.home-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/*Trips Page Specific Styles*/
+
+.trips-header {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.trips-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.trips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.trip-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card-content {
+    padding: 1rem;
+}
+
+.trip-card-content h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.trip-card-content p {
+    color: var(--primary-color);
+    line-height: 1.4;
+}
+
+.trip-card-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trip-card-content a:hover {
+    background-color: #b15601;
+}
+
+/*Section Container */
 section {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
 }
 
+/* Contact Section Styles */
 
 /* Contact Form */
 form {
@@ -168,24 +251,20 @@ form {
     margin: 0 auto;
 }
 
-
 fieldset {
     border: none;
     margin-bottom: 1rem;
 }
 
-
 .form-group {
     margin-bottom: 1rem;
 }
-
 
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -197,14 +276,12 @@ textarea {
     font-size: 1rem;
 }
 
-
 textarea {
     resize: vertical;
 }
 
-
 button {
-    background-color:#b15601;
+    background-color: #b15601;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -214,16 +291,14 @@ button {
     transition: background-color 0.3s ease;
 }
 
-
 button:hover,
 button:focus {
-    background-color: #000cb3; 
+    background-color: #000cb3;
     color: #ffffff;
     transform: translateY(-2px);
     outline: 3px solid var(--accent1-color);
     outline-offset: 3px;
 }
-
 
 /* Reusable Common Styles for Inputs and Buttons */
 .input-button-group {
@@ -232,14 +307,12 @@ button:focus {
     gap: 10px;
 }
 
-
 /* Map Styling */
 .map iframe {
     width: 100%;
     height: 450px;
     border: 0;
 }
-
 
 /* Employee Profile Images Section */
 .images {
@@ -248,13 +321,11 @@ button:focus {
     margin-top: 2rem;
 }
 
-
 figure {
     margin: 0;
     flex: 1 1 200px;
     text-align: center;
 }
-
 
 figure img {
     width: 100%;
@@ -263,7 +334,6 @@ figure img {
     object-fit: cover;
 }
 
-
 figcaption {
     font-family: var(--font-secondary);
     font-size: 1rem;
@@ -271,10 +341,7 @@ figcaption {
     margin-top: 5px;
 }
 
-
-
-
-/* Footer Layout*/
+/* Footer Layout */
 footer {
     display: flex;
     justify-content: space-between;
@@ -287,7 +354,7 @@ footer {
 }
 
 footer a {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: underline;
     font-weight: 500;
     transition: color 0.3s ease, outline 0.3s ease;
@@ -295,11 +362,10 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
     outline: 2px dashed var(--accent1-color);
     outline-offset: 4px;
 }
-
 
 /* Social Media Links */
 .sociallinks a {
@@ -307,12 +373,10 @@ footer a:focus {
     margin: 10px;
 }
 
-
 .sociallinks img {
     width: 30px;
     height: auto;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -321,11 +385,9 @@ footer a:focus {
         text-align: center;
     }
 
-
     .nav {
         justify-content: center;
     }
-
 
     .hero article {
         width: 90%;
@@ -333,30 +395,35 @@ footer a:focus {
         bottom: 5%;
     }
 
-
     .history-content {
         grid-template-columns: 1fr;
     }
-
 
     .adventure-gallery {
         flex-direction: column;
         align-items: center;
     }
 
-
     figure {
         width: 80%;
     }
-
 
     footer {
         flex-direction: column;
         text-align: center;
     }
+
     .history h2,
     .adventure h3 {
         text-align: center;
     }
-}
 
+    .trips-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero {
+        height: 50vh;
+        font-size: 2rem;
+    }
+}
