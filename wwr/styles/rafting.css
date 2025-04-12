@@ -1,6 +1,6 @@
 /* Define Color Variables */
 :root {
-    --primary-color: #404655;
+    --primary-color: #111318;
     --secondary-color: #f37703;
     --accent1-color: #BEE3DB;
     --accent2-color: #F5F5F5;
@@ -134,40 +134,85 @@ h2 {
 
 /*Home Page Styles*/
 
-.grid-container {
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(14, 13, 13);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* CTA banner */
+.cta-banner {
+    text-align: center;
+    background-color: #0077cc;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.cta-banner .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #0077cc;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About grid */
+.about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-}
-
-.home-hero {
-    background: no-repeat center center;
-    background-size: cover;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--accent2-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size: 3rem;
-}
-
-.home-section {
-    padding: 3rem 1rem;
+    padding: 2rem;
     text-align: center;
-    background-color: var(--accent2-color);
 }
 
-.home-section h2 {
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
+.about-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.home-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: var(--primary-color);
+/* Newsletter */
+.newsletter {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.newsletter button {
+    background-color: #b15601;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 /*Trips Page Specific Styles*/
