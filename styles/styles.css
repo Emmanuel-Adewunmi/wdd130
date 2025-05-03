@@ -1,83 +1,243 @@
-*{
+/* styles/styles.css */
+
+/* Reset and Basic Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav {
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
     background-color: darkblue;
-    padding: 10px;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+}
+
+nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around; /* Use space-around for better distribution */
     align-items: center;
+    padding: 0.5em 1em; /* Adjust padding */
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 0.5rem;
+    padding: 0.75rem 1rem; /* Slightly increase padding */
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Adjust font size */
     font-weight: 700;
-
+    border-radius: 5px; /* Add slight rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-h1 {
+nav a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em; /* Space out the links */
+}
+
+nav ul li a {
+    /* Inherits styles from nav a */
+}
+
+/* Main Content */
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+    padding: 1rem; /* Add some padding around the main content */
+    background-color: #fff; /* Add a background to the main content */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+main h1 {
     color: darkblue;
-    border-bottom: #000;
+    border-bottom: 2px solid darkblue; /* More visible border */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left; /* Align heading to the left within the main content */
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid #ccc; /* Lighter border */
+    padding: 5px; /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More subtle shadow */
     float: right;
     margin: 0 0 1rem 1rem;
+    border-radius: 5px; /* Add rounded corners to the image */
 }
 
-p {
+main p {
     padding: 0;
+    margin-bottom: 1em; /* Add spacing between paragraphs */
+    color: #555; /* Improve readability */
 }
-.grid{
+
+/* Grid Layout */
+.grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 2fr; /* Adjust column proportions */
+    align-items: start; /* Align items to the start of the grid cell */
+    max-width: 960px; /* Standardize max-width */
+    margin: 15px auto; /* Center the grid with top margin */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
+/* Aside */
 aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    width: 100%; /* Make aside take full width on smaller screens */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Light background for aside */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 aside img {
-    width: 200px;
+    width: 100%; /* Make image responsive within the aside */
     height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
 }
+
 aside h2 {
-    position: absolute;
-    top: 1px;
-    left: 100px;
+    position: static; /* Adjust positioning for better flow */
+    top: auto;
+    left: auto;
+    margin-bottom: 0.5rem;
+    color: darkblue;
+    border-bottom: 1px solid darkblue;
+    padding-bottom: 0.3rem;
 }
-header, .grid, footer {
+
+aside p {
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
-    max-width: 840px;
-    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+    max-width: 960px;
+    margin: 15px auto 0 auto; /* Adjust margins */
+    font-size: 0.9em;
 }
-/* Class Selector */
+
+/* Box Class */
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #eee;
-    color: #000;
+    color: #333; /* Adjust text color for better contrast */
+    border-radius: 5px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box li {
+    margin-bottom: 0.5em;
+}
+
+.box li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.box li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    aside {
+        grid-column: 1 / 2;
+        grid-row: auto; /* Allow aside to flow naturally below main */
+        width: 100%;
+        position: static;
+    }
+
+    aside h2 {
+        position: static;
+        text-align: center; /* Center the aside heading on smaller screens */
+    }
+
+    main img {
+        float: none; /* Don't float the image on small screens */
+        margin: 0 auto 1rem auto; /* Center the image */
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links on smaller screens */
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    nav {
+        justify-content: center; /* Center nav links */
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 2fr; /* Two columns on larger screens */
+    }
+
+    aside {
+        width: 20rem;
+        position: relative; /* Keep relative positioning for potential adjustments */
+        grid-column: 1 / 2;
+        grid-row: 1 / 1; /* Align aside with the top of main */
+    }
+
+    aside h2 {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: rgba(249, 249, 249, 0.8); /* Add a background for better readability */
+        padding: 0.5rem;
+        border-radius: 5px;
+        border-bottom: none; /* Remove the border if it looks odd with positioning */
+    }
 }
